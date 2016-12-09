@@ -7,38 +7,47 @@
 		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
 		<!--设置响应式布局-->
 		<meta name="viewport" content="width = device-width,initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo/title_logo_64X64.ico"/>
+		<title>幻灵梦镜--by 寻香</title>
 		
-		<title>首页</title>
 		
 		
-		<link rel="icon" href="img/logo/title_logo_48X48.ico" type="image/x-icon"/>  
+		
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/responseLayout.css" />
-		
-		
+		<link rel="stylesheet" href="plugin/ztree/css/zTreeStyle.css" />
+		<link rel="stylesheet" href="css/index.css" />
+
 		
 		<script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--弹出组件-->
+		<script type="text/javascript" src="plugin/layer/layer.js" ></script>
+		<!--ztree树插件-->
+		<script type="text/javascript" src="plugin/ztree/js/jquery.ztree.core.js" ></script>
+		<script type="text/javascript" src="plugin/ztree/js/jquery.ztree.excheck.js" ></script>
+		<!--自己写的js，一定要放在最后-->
+		<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+		
 	</head>
 	<body>
 		<div class="heading">
 			
 		</div>
 		<div class="nav">
-			<form class="navbar-form navbar-left">
-				<input class="form-control" placeholder="Search..." type="text">
-			</form>
+			<!--不能加form标签，否则在触发enter键查询的时候回默认提交，刷新页面-->
+			<input class="form-control" style="width: 220px;" id="searchNodes" placeholder="Search..." type="text"><i id="findNode"></i>
 		</div>
 		
 	    <div class="container">
 	        <div class="left" style="overflow-y: auto; ">
-			          <div class="list-group">
-			            <a href="#" class="list-group-item active">Link</a>
-			        </div><!--/.sidebar-offcanvas-->
-			      
+			      <div class="treeContainer">
+			      	<ul id="leftTree" class="ztree"></ul>
+			      </div>
 	        </div>
-	        <div class="main"></div>
+	        <div class="main">
+	        	 <iframe frameborder="0" scrolling="no" src="firestorm.html" width="100%" height="500px"></iframe>
+	        </div>
 	        <!--<div class="right"></div>-->
 	    </div>
 	    <div class="footing">

@@ -1,0 +1,53 @@
+.ztree span{
+    font-size: 16px !important;
+    font-family: "microsoft yahei";
+}
+.zTreeLeft{
+    border: solid 1px red;
+    padding-left:20px;
+    padding-top: 20px;
+}
+.zTreeLeft input{
+    padding-left:15px;
+    outline: none;
+}
+.zTreeLeft>i{
+    display: inline-block;
+    left: -14px;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background: url(./img/zTreeStandard.png) no-repeat -30px -72px;
+    cursor: pointer;
+
+}
+.zTreeLeft ul{
+    margin-top: 20px;
+}
+.ztree li span.button.ico_docu,.ztree li span.button.ico_close,.ztree li span.button.ico_open{
+    display: none;
+}
+.ztree li span.button{
+    margin-right: 8px;
+}
+
+.ztree li a{
+    margin-bottom: 26px;
+}
+.ztree li span.button.switch{
+    width: 11px;
+    height: 11px;
+}
+.ztree li span.button.center_open,.ztree li span.button.roots_open,.ztree li span.button.bottom_open{
+    background-position: 0px -72px;
+}
+.ztree li span.button.center_close,.ztree li span.button.roots_close,.ztree li span.button.bottom_close{
+    background-position: -13px -72px;
+}
+.ztree li ul.line{
+    background: transparent;
+}
+.ztree li span.button.center_docu,.ztree li span.button.bottom_docu{
+    background:transparent;
+}

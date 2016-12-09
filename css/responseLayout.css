@@ -1,3 +1,8 @@
+/*
+ * 	   author：		 段福举
+ * createdate：		2016-12-09
+ * 
+*/
 *{
 	margin: 0px;
     padding: 0px;
@@ -35,7 +40,6 @@ html{
 
 
 
-
 .heading,
 .nav,
 .container,
@@ -50,7 +54,7 @@ html{
 .left,
 .right,
 .main{
-    background-color: cornflowerblue;
+  /*  background-color: antiquewhite;*/
 }
 
 .footing{
@@ -76,12 +80,11 @@ html{
     .left,
     .right
     {
-        width: 200px;
+        width: 220px;
     }
     .main{
-        margin-left: 5px;
-        margin-right: 5px;
-        width: 720px;
+        margin-left: 15px;
+        width: 690px;
     }
     .container{
         height: 500px;

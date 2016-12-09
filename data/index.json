@@ -1,31 +1,34 @@
-{"data":[
+{"zNodes":[
+	{"id":1,"pId":0,"name":"FireStorm","title":"","detail":"<iframe frameborder='0' scrolling='no' src='firestorm.html' width='100%' height='500px'></iframe>"},
+	{"id":1,"pId":0,"name":"Java","title":"","detail":""},
+	{"id":2,"pId":0,"name":"HTML","title":"","detail":""},
+	{"id":3,"pId":0,"name":"JavaScript","title":"","detail":""},
+	{"id":4,"pId":0,"name":"小技巧","title":"","detail":""},
 	{
-		"id":1,
+		"id":5,
+		"pId":1,
 		"name":"列表1", 
 		"title":"",
 		"detail":"340000"
 	},
 	{
-		"id":2,
+		"id":6,
+		"pId":1,
 		"name":"列表2", 
 		"title":"",
 		"detail":"340000"
 	},
 	{
-		"id":3,
+		"id":7,
+		"pId":2,
 		"name":"列表3", 
 		"title":"",
 		"detail":"340000"
 	},
 	{
-		"id":4,
+		"id":8,
+		"pId":1,
 		"name":"列表4", 
-		"title":"",
-		"detail":"340000"
-	},
-	{
-		"id":5,
-		"name":"列表5", 
 		"title":"",
 		"detail":"340000"
 	}

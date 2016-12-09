@@ -1,32 +1,132 @@
-$(function(){
-	
-	
-	
-	//js自动读取指定的json形式的数据
-	var data ={};
-	function initAreaData(){
-		var dataroot="./data/index.json";
+/*
+ * 	    author：		 段福举
+ *  createdate：		2016-12-09
+ * description：		尝试实现JavaScript对象封装
+ * 
+*/
+var nodeList;
+//创建对象
+function Lolita(){}
+
+//设置对象的属性以及方法
+Lolita.prototype={
+	init:function(){
+		//初始化方法
+		this.render();
+	},
+	render:function(){
+		this.initLeftDataTree();//右侧树
+	},
+	initLeftDataTree:function(){
+		var curMenu = null, zTree_Menu = null;
+    	var setting = {
+    		    data:{
+    		        simpleData:{
+    		            enable: true,
+    		            idKey: "id",
+    		            pIdKey: "pId",
+    		            rootPId: 0
+    		        }
+    		    },
+	          view: {
+				 showLine: false,
+				 showIcon: false,
+				
+				 addDiyDom: addDiyDom
+	          },
+ 			 data: {
+				 simpleData: {
+				 	enable: true
+				 }
+			 },
+			 callback: {
+				beforeClick: beforeClick,
+				onClick: zTreeOnClick
+			 }
+    		};
+    	function zTreeOnClick(event, treeId, treeNode,clickFlag){
+    		setRightDivText(treeNode);
+    	}
+    	function setRightDivText(treeNode){
+    		alert(treeNode.detail);
+			$(".main").html( treeNode.detail);
+    	}
+    	function addDiyDom(treeId, treeNode) {
+			var spaceWidth = 5;
+			var switchObj = $("#" + treeNode.tId + "_switch"),
+			icoObj = $("#" + treeNode.tId + "_ico");
+			switchObj.remove();
+			icoObj.before(switchObj);
+
+			if (treeNode.level > 1) {
+				var spaceStr = "<span style='display: inline-block;width:" + (spaceWidth * treeNode.level)+ "px'></span>";
+				switchObj.before(spaceStr);
+			}
+		}
+		function beforeClick(treeId, treeNode) {
+			if (treeNode.level == 0 ) {
+				//过滤根节点（不包括火焰风暴）
+				if(treeNode.name=="FireStorm"){
+					return true;
+				}
+				var zTree = $.fn.zTree.getZTreeObj("leftTree");
+				zTree.expandNode(treeNode);
+				return false;
+			}
+			return true;
+		}
+		
 		//获取json数据
-		$.getJSON(dataroot, function(data){
-			data=data.data;
-			var a_html="";
-			//拼接菜单
-			$.each(data, function(i,d) {
-				a_html+="<a href='#' click='showDetail("+d.detail+")'"+
-					"title='"+d.title+"' class='list-group-item' >"+d.name+"</a>";
+		$.getJSON("./data/index.json", function(data){
+			var treeObj =$("#leftTree");
+			$.fn.zTree.init(treeObj, setting, data.zNodes);
+			treeObj.hover(function () {
+				if (!treeObj.hasClass("showIcon")) {
+					treeObj.addClass("showIcon");
+				}
+			}, function() {
+				treeObj.removeClass("showIcon");
 			});
-			 $(".list-group").append(a_html);
 		});
-	}
-	initAreaData();
-	//显示详情
-	function showDetail(data){
-		$(".main").html(data);
+		//查询树形结构
+		
+		$("#searchNodes").keydown(function(event) {    
+            if (event.keyCode == 13) {    
+              getTreeByName("leftTree","searchNodes");
+            }    
+        });    
+        
+		//列表选项卡的树
+		function getTreeByName(treeId,textId) {
+		    var zTree = $.fn.zTree.getZTreeObj(treeId);
+		    var value = $.trim($("#"+textId).val());
+		    if(value.length>0){
+		        if(nodeList){
+		            updateNodes(false,false,treeId);
+		        }
+		        nodeList = zTree.getNodesByParamFuzzy("name", value);
+		        updateNodes(true,true,treeId);
+		    }
+		}
+		//更新高亮显示
+		function updateNodes(highlight,expand,treeId) {
+		    var zTree = $.fn.zTree.getZTreeObj(treeId);
+		    $.each(nodeList,function(index,node){
+		        node.highlight = highlight;
+		        zTree.updateNode(node);
+		        zTree.expandNode(node.getParentNode(),expand);
+		    });
+		}
 	}
 	
-	
-	//点击中间右边的导航栏时的动作
-	$(".list-group-item").click(function(){
-		$(this).addClass("active").siblings().removeClass("active");	
-	});
+		
+};
+
+
+
+
+
+$(function(){
+	var lolita = new Lolita();
+	lolita.init();
 });
