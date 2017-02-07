@@ -31,7 +31,7 @@ Lolita.prototype={
 	          view: {
 				 showLine: false,
 				 showIcon: false,
-				
+				 fontCss: getFontCss,
 				 addDiyDom: addDiyDom
 	          },
  			 data: {
@@ -44,11 +44,17 @@ Lolita.prototype={
 				onClick: zTreeOnClick
 			 }
     		};
+    	//给搜索的项增加颜色
+		function getFontCss(treeId, treeNode) {  
+			console.log(treeNode.highlight);
+	        return (!!treeNode.highlight) ? {color:"red", "font-weight":"bold"} : {color:"#fff", "font-weight":"normal"};  
+	    }
+		//树节点的点击事件
     	function zTreeOnClick(event, treeId, treeNode,clickFlag){
     		setRightDivText(treeNode);
     	}
+    	//树节点的点击事件（查看节点的详情）
     	function setRightDivText(treeNode){
-    		alert(treeNode.detail);
 			$(".main").html( treeNode.detail);
     	}
     	function addDiyDom(treeId, treeNode) {
