@@ -8,8 +8,8 @@ website:	http://code.google.com/p/jquerytree/
 
 -------------------------------------*/
 
-.ztree * {padding:0; margin:0; font-size:12px; color: cornflowerblue; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif}
-.ztree {margin:0; padding:5px; color:cornflowerblue}
+.ztree * {padding:0; margin:0; font-size:12px; /*color:cornflowerblue*/; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif}
+.ztree {margin:0; padding:5px; /*color:cornflowerblue*/}
 .ztree li{padding:0; margin:0; list-style:none; line-height:14px; text-align:left; white-space:nowrap; outline:0}
 .ztree li ul{ margin:0; padding:0 0 0 18px}
 .ztree li ul.line{ background:url(./img/line_conn.gif) 0 0 repeat-y;}
@@ -101,7 +101,7 @@ ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height
 .ztree li span.button {margin-top: -7px;}
 .ztree li span.button.switch {width: 16px;height: 16px;}
 
-.ztree li a.level0 span {font-size: 150%;font-weight: bold;}
+/*.ztree li a.level0 span {font-size: 150%;font-weight: bold;}*/
 .ztree li span.button {background-image:url(../../../img/left_menuForOutLook.png); *background-image:url(../../../img/left_menuForOutLook.gif)}
 .ztree li span.button.switch.level0 {width: 20px; height:20px}
 .ztree li span.button.switch.level1 {width: 20px; height:20px}

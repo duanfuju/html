@@ -46,8 +46,7 @@ Lolita.prototype={
     		};
     	//给搜索的项增加颜色
 		function getFontCss(treeId, treeNode) {  
-			console.log(treeNode.highlight);
-	        return (!!treeNode.highlight) ? {color:"red", "font-weight":"bold"} : {color:"#fff", "font-weight":"normal"};  
+	        return (!!treeNode.highlight) ? {"color":"red", "font-weight":"bold"} : {"color":"cornflowerblue", "font-weight":"normal"};  
 	    }
 		//树节点的点击事件
     	function zTreeOnClick(event, treeId, treeNode,clickFlag){
@@ -65,7 +64,7 @@ Lolita.prototype={
 			icoObj.before(switchObj);
 
 			if (treeNode.level > 1) {
-				var spaceStr = "<span style='display: inline-block;width:" + (spaceWidth * treeNode.level)+ "px'></span>";
+				var spaceStr = "<span style='display: inline-;width:" + (spaceWidth * treeNode.level)+ "px'></span>";
 				switchObj.before(spaceStr);
 			}
 		}
