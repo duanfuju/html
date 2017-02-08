@@ -4,32 +4,82 @@
 	{"id":2,"pId":0,"name":"HTML","title":"","detail":""},
 	{"id":3,"pId":0,"name":"JavaScript","title":"","detail":""},
 	{"id":4,"pId":0,"name":"小技巧","title":"","detail":""},
+	{"id":5,"pId":0,"name":"js特效","title":"","detail":""},
+	{"id":6,"pId":0,"name":"eclipse设置","title":"","detail":""},
+	{"id":7,"pId":0,"name":"学习总结","title":"","detail":""},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	{
-		"id":5,
-		"pId":1,
-		"name":"mphj", 
+		"id":76,
+		"pId":7,
+		"name":"HTML5学习笔记(简洁版)", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/HTML5学习笔记(简洁版).txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":75,
+		"pId":7,
+		"name":"css基础", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/css基础.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":74,
+		"pId":7,
+		"name":"html基础", 
+		"title":"",
+		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/html基础.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":73,
+		"pId":7,
+		"name":"html5新特性", 
+		"title":"",
+		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/html5新特性.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":72,
+		"pId":7,
+		"name":"git命令学习笔记", 
+		"title":"",
+		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/git命令学习笔记.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":71,
+		"pId":7,
+		"name":"jfinal框架总结", 
+		"title":"",
+		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/jfinal框架总结.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":61,
+		"pId":6,
+		"name":"解决乱码", 
+		"title":"",
+		"detail":"<iframe frameborder='0' scrolling='no' src='https://duanfuju.github.io/helpdoc/解决乱码.png' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":51,
+		"pId":5,
+		"name":"滑稽脸特效", 
 		"title":"",
 		"detail":"<iframe frameborder='0' scrolling='no' src='https://alidaibi.github.io/mphj/' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":6,
-		"pId":5,
-		"name":"列表2", 
+		"id":31,
+		"pId":3,
+		"name":"js获取系统默认日期", 
 		"title":"",
-		"detail":"340000"
-	},
-	{
-		"id":7,
-		"pId":2,
-		"name":"列表3", 
-		"title":"",
-		"detail":"340000"
-	},
-	{
-		"id":8,
-		"pId":1,
-		"name":"列表4", 
-		"title":"",
-		"detail":"340000"
+		"detail":"<iframe frameborder='0' scrolling='no' src='https://duanfuju.github.io/helpdoc/默认日期.txt' width='100%' height='500px'></iframe>"
 	}
 ]}
