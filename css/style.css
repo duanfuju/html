@@ -25,3 +25,49 @@ canvas {
   top: 0;
   
 }
+
+
+*{  
+	  scrollbar-face-color:#01b9f6; /*面子*/  
+	  scrollbar-arrow-color:#fff; /*箭头*/  
+	  scrollbar-3dlight-color:#e9f1d2; /*最外左*/  
+	  scrollbar-highlight-color:#e9f1d2; /*左二*/  
+	  scrollbar-shadow-color:#e9f1d2; /*右二*/  
+	  scrollbar-darkshadow-color:#e9f1d2; /*右一*/  
+	  scrollbar-track-color:#e9f1d2; /*滑道*/  
+}
+
+
+/*滚动条整体*/  
+::-webkit-scrollbar{  
+    width:12px; /*滚动条宽度*/  
+}  
+/*滚动条按钮*/  
+::-webkit-scrollbar-button {  
+
+}  
+::-webkit-scrollbar-track{  
+    background-color: #e9f1d2;  /*滑道全部*/  
+}  
+::-webkit-scrollbar-track-piece{  
+    background-color:#c7dce3;  /*滑道*/  
+    -webkit-border-radius:1px; /*滑道圆角宽度*/  
+}  
+::-webkit-scrollbar-thumb{  
+   background:#01b9f6; /*滑动条表面*/  
+    /*滑动条边框*/  
+    border-radius:8px;/*滑动条圆角宽度*/ 
+}  
+/*横竖滚动条交角*/  
+::-webkit-scrollbar-corner {  
+    background-color: #0380f5;  
+}  
+/*横竖滚动条交角图案*/  
+::-webkit-resizer {  
+    background-repeat: no-repeat;  
+    background-position: bottom right;  
+}  
+/*鼠标滑过滑动条*/  
+::-webkit-scrollbar-thumb:hover{  
+    background:#009dd2; 
+} 

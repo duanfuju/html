@@ -3,15 +3,11 @@
 	{"id":1,"pId":0,"name":"Java","title":"","detail":""},
 	{"id":2,"pId":0,"name":"HTML","title":"","detail":""},
 	{"id":3,"pId":0,"name":"JavaScript","title":"","detail":""},
-	{"id":4,"pId":0,"name":"小技巧","title":"","detail":""},
+	{"id":4,"pId":0,"name":"工具","title":"","detail":""},
 	{"id":5,"pId":0,"name":"js特效","title":"","detail":""},
 	{"id":6,"pId":0,"name":"eclipse设置","title":"","detail":""},
 	{"id":7,"pId":0,"name":"学习总结","title":"","detail":""},
-	
-	
-	
-	
-	
+	{"id":8,"pId":0,"name":"数据库","title":"","detail":""},
 	
 	
 	
@@ -20,63 +16,255 @@
 	
 	
 	{
-		"id":76,
+		"id":805,
+		"pId":8,
+		"name":"oracle导入导出", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/oracle导入导出.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":804,
+		"pId":8,
+		"name":"sql截取过长字段显示...", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/sql截取过长字段显示....txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":803,
+		"pId":8,
+		"name":"sqlserver后取本月数据", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/sqlserver后去本月数据.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":802,
+		"pId":8,
+		"name":"联合查询+视图", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/联合查询+视图.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":801,
+		"pId":8,
+		"name":"Oracle数据库监控SQL", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/Oracle数据库监控SQL.txt ' width='100%' height='500px'></iframe>"
+	},
+	
+	{
+		"id":7010,
+		"pId":7,
+		"name":"JavaScript基础", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JavaScript基础.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":709,
+		"pId":7,
+		"name":"JQuery基础", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JQuery基础.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":708,
+		"pId":7,
+		"name":"JQueryUI的基础", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JQueryUI的基础.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":707,
+		"pId":7,
+		"name":"JQueryMobile学习笔记", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JQueryMobile.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":706,
 		"pId":7,
 		"name":"HTML5学习笔记(简洁版)", 
 		"title":"",
 		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/HTML5学习笔记(简洁版).txt' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":75,
+		"id":705,
 		"pId":7,
 		"name":"css基础", 
 		"title":"",
 		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/css基础.txt' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":74,
+		"id":704,
 		"pId":7,
 		"name":"html基础", 
 		"title":"",
 		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/html基础.txt' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":73,
+		"id":703,
 		"pId":7,
 		"name":"html5新特性", 
 		"title":"",
 		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/html5新特性.txt' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":72,
+		"id":703,
+		"pId":7,
+		"name":"响应式布局", 
+		"title":"",
+		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/响应式布局.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":702,
 		"pId":7,
 		"name":"git命令学习笔记", 
 		"title":"",
 		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/git命令学习笔记.txt' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":71,
+		"id":701,
 		"pId":7,
 		"name":"jfinal框架总结", 
 		"title":"",
 		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/jfinal框架总结.txt' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":61,
+		"id":601,
 		"pId":6,
 		"name":"解决乱码", 
 		"title":"",
-		"detail":"<iframe frameborder='0' scrolling='no' src='https://duanfuju.github.io/helpdoc/解决乱码.png' width='100%' height='500px'></iframe>"
+		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/解决乱码.png' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":51,
+		"id":504,
+		"pId":5,
+		"name":"弹出div窗口", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/弹出div.html' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":503,
+		"pId":5,
+		"name":"可输入的select", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/可输入的select.html' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":502,
+		"pId":5,
+		"name":"自定义下拉框（要解除浏览器保护）", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/自定义下拉框.html' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":501,
 		"pId":5,
 		"name":"滑稽脸特效", 
 		"title":"",
 		"detail":"<iframe frameborder='0' scrolling='no' src='https://alidaibi.github.io/mphj/' width='100%' height='500px'></iframe>"
 	},
 	{
-		"id":31,
+		"id":405,
+		"pId":4,
+		"name":"正则", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/正则.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":404,
+		"pId":4,
+		"name":"按钮图标坐标（Dorado7）", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/按钮图标坐标.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":403,
+		"pId":4,
+		"name":"获取根目录", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/获取根目录.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":402,
+		"pId":4,
+		"name":"2016.5.18", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/20160518.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":401,
+		"pId":4,
+		"name":"2016.7.5", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/2016.7.5.txt' width='100%' height='500px'></iframe>"
+	},
+	
+	
+	{
+		"id":3010,
+		"pId":3,
+		"name":"手写table部分js", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/手写table部分js.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":309,
+		"pId":3,
+		"name":"mydate97回调", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/mydate97回调.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":308,
+		"pId":3,
+		"name":"split小问题", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/split小问题.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":307,
+		"pId":3,
+		"name":"js验证——只允许输入数字", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/js验证.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":306,
+		"pId":3,
+		"name":"子表集合添加", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/子表集合添加.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":305,
+		"pId":3,
+		"name":"获取select自定义属性", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/获取select自定义属性.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":304,
+		"pId":3,
+		"name":"check功能", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/check功能.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":303,
+		"pId":3,
+		"name":"checkbox选中获取值", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/checkbox选中获取值.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":302,
+		"pId":3,
+		"name":"checkbox单选", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/checkbox单选.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":301,
 		"pId":3,
 		"name":"js获取系统默认日期", 
 		"title":"",
