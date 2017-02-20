@@ -40,14 +40,18 @@
 		
 	</head>
 	<body>
+		<label id='musicTop' for='sideToggle' title="控制音乐">=</label>
+		<input type='checkbox' id='sideToggle'>
+		<aside id="musicDiv">
+			<![if !IE]>
+				<audio src="music/Undo (Live)-Sanna Nielsen.mp3" autoplay="autoplay" controls="controls"></audio>
+			<![endif]>
+		</aside>
+			
+			
+			
 		<div class="heading">
-			<label id='musicTop' for='sideToggle' title="控制音乐">=</label>
-			<input type='checkbox' id='sideToggle'>
-			<aside id="musicDiv">
-				<![if !IE]>
-					<audio src="music/Undo (Live)-Sanna Nielsen.mp3" autoplay="autoplay" controls="controls"></audio>
-				<![endif]>
-			</aside>
+			<iframe src="svg/svg.svg" width="100%" height="100%" frameborder="0"></iframe>
 		</div>
 		<div class="nav">
 			<!--不能加form标签，否则在触发enter键查询的时候回默认提交，刷新页面-->
