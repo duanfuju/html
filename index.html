@@ -6,20 +6,25 @@
 		<!--默认强制使用最高版本的ie或谷歌浏览器内核-->
 		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
 		<!--设置响应式布局-->
-		<meta name="viewport" content="width = device-width,initial-scale=1">
+		<meta name="viewport" content="width = device-width,initial-scale=1,user-scalable=no">
+		<!--浏览器的标签的图标		一方通行-->
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo/title_logo_64X64.ico"/>
 		<title>幻灵梦镜--by 寻香</title>
 		
 		
 		
-		
+		<!--bootstrap 本来想用来布局的，暂时没有用到，挺可惜的-->
 		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!--响应式布局的css-->
 		<link rel="stylesheet" href="css/responseLayout.css" />
+		<!--树形搜索菜单的css-->
 		<link rel="stylesheet" href="plugin/ztree/css/zTreeStyle.css" />
+		<!--自己写的css-->
 		<link rel="stylesheet" href="css/index.css" />
 
-		
+		<!--所有的特效基本都是基于Ta-->
 		<script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+		<!--bootstrap 本来想用来布局的，暂时没有用到，挺可惜的-->
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 		<!--弹出组件-->
 		<script type="text/javascript" src="plugin/layer/layer.js" ></script>
@@ -29,20 +34,24 @@
 		<!--自己写的js，一定要放在最后-->
 		<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
 		
-		<![if !IE]>
-			<audio src="music/Undo (Live)-Sanna Nielsen.mp3" autoplay="autoplay"></audio>
-		<![endif]>
+		
 		
 		
 		
 	</head>
 	<body>
 		<div class="heading">
-			
+			<label id='musicTop' for='sideToggle' title="控制音乐">=</label>
+			<input type='checkbox' id='sideToggle'>
+			<aside id="musicDiv">
+				<![if !IE]>
+					<audio src="music/Undo (Live)-Sanna Nielsen.mp3" autoplay="autoplay" controls="controls"></audio>
+				<![endif]>
+			</aside>
 		</div>
 		<div class="nav">
 			<!--不能加form标签，否则在触发enter键查询的时候回默认提交，刷新页面-->
-			<input class="form-control" style="width: 220px;" id="searchNodes" placeholder="Search..." type="text"><i id="findNode"></i>
+			<input class="form-control" style="width: 220px;" id="searchNodes" placeholder="Enter Search..." autocomplete="off" type="text"><i id="findNode"></i>
 		</div>
 		
 	    <div class="container">
@@ -56,9 +65,7 @@
 	        </div>
 	        <!--<div class="right"></div>-->
 	    </div>
-	    <div class="footing">
-	    	
-	    </div>
+	    <!--<div class="footing"></div>-->
 	    <!--http://www.atool.org/colorpicker.php 调色-->
 	    <!--背景的鼠标的特效-->
 		<script type="text/javascript" src="js/canvas-nest.min.js" color="244, 204, 204" opacity="1" count="99"></script>

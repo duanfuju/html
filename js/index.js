@@ -16,6 +16,10 @@ Lolita.prototype={
 	},
 	render:function(){
 		this.initLeftDataTree();//右侧树
+		
+	},
+	btnGroup:function(){
+		$("#sideToggle").click();
 	},
 	initLeftDataTree:function(){
 		var curMenu = null, zTree_Menu = null;
