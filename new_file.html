@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+		<script>
+		$(function(){
+			$("#main").click(function(){
+					alert(111);
+			});
+			$("div").click(function(){
+				$(this).parent("li").remove();
+			});
+			$("#btn").click(function(){
+				$("ul").append("<li id=\"main\">XXX <div>删除</div></li>");
+				$("#main").click(function(){
+					alert(111);
+			});
+			$("div").click(function(){
+				$(this).parent("li").remove();
+			});
+			});
+			
+		});
+			
+			
+				
+		</script>
+		<style>
+			
+			li{
+				border: 1px solid red;
+			}
+			div{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="btn"> add</button>
+		<ul>
+			<li id="main">1 <div>删除</div></li>
+			<li id="main">2 <div>删除</div></li>
+			<li id="main">3 <div>删除</div></li>
+			<li id="main">4 <div>删除</div></li>
+		</ul>
+	</body>
+</html>
