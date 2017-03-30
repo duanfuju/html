@@ -13,8 +13,20 @@
 	
 	
 	
-	
-	
+	{
+		"id":807,
+		"pId":8,
+		"name":"mysql注意事项", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/mysql注意事项.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":806,
+		"pId":8,
+		"name":"Oracle常用", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/Oracle常用.txt' width='100%' height='500px'></iframe>"
+	},
 	{
 		"id":805,
 		"pId":8,
