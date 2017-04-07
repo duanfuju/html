@@ -12,7 +12,13 @@
 	
 	
 	
-	
+	{
+		"id":808,
+		"pId":8,
+		"name":"mysql函数", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/mysql函数.txt' width='100%' height='500px'></iframe>"
+	},
 	{
 		"id":807,
 		"pId":8,
