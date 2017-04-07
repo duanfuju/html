@@ -219,6 +219,21 @@
 	},
 	
 	
+	
+	{
+		"id":3012,
+		"pId":3,
+		"name":"json格式排序", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/json格式排序.txt' width='100%' height='500px'></iframe>"
+	},
+	{
+		"id":3011,
+		"pId":3,
+		"name":"数组根据指定下标删除", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/数组根据指定下标删除.txt' width='100%' height='500px'></iframe>"
+	},
 	{
 		"id":3010,
 		"pId":3,
