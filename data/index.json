@@ -11,7 +11,13 @@
 	
 	
 	
-	
+	{
+		"id":809,
+		"pId":8,
+		"name":"mysql定义自联表的树结构等级", 
+		"title":"",
+		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/mysql定义自联表的树结构等级.txt' width='100%' height='500px'></iframe>"
+	},
 	{
 		"id":808,
 		"pId":8,
