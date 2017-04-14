@@ -79,7 +79,7 @@ Lolita.prototype={
 					return true;
 				}
 				var zTree = $.fn.zTree.getZTreeObj("leftTree");
-				zTree.expandNode(treeNode);
+				zTree.expandNode(treeNode, true, false);
 				return false;
 			}
 			return true;
