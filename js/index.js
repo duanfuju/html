@@ -18,6 +18,12 @@ Lolita.prototype={
 		this.initLeftDataTree();//右侧树
 		
 	},
+	jsonArrayMerge:function(array1,array2){
+		$.each(array2, function(i,data) {
+			array1.push(data);
+		});
+		return array1;
+	},
 	btnGroup:function(){
 		$("#sideToggle").click();
 	},
@@ -73,32 +79,44 @@ Lolita.prototype={
 			}
 		}
 		function beforeClick(treeId, treeNode) {
+			//过滤根节点（不包括火焰风暴）
+			if(treeNode.name=="FireStorm"){
+				return true;
+			}
 			if (treeNode.level == 0 ) {
-				//过滤根节点（不包括火焰风暴）
-				if(treeNode.name=="FireStorm"){
-					return true;
-				}
 				var zTree = $.fn.zTree.getZTreeObj("leftTree");
 				zTree.expandNode(treeNode, true, false);
 				return false;
 			}
+			
 			return true;
 		}
-		
 		//获取json数据
-		$.getJSON("./data/index.json", function(data){
-			var treeObj =$("#leftTree");
-			$.fn.zTree.init(treeObj, setting, data.zNodes);
-			treeObj.hover(function () {
-				if (!treeObj.hasClass("showIcon")) {
-					treeObj.addClass("showIcon");
-				}
-			}, function() {
-				treeObj.removeClass("showIcon");
-			});
-		});
-		//查询树形结构
+		$.ajaxSettings.async = false;//ajax数据改成同步的
+		var treeData=[];
+		$.getJSON("./data/index.json", function(data){treeData=data.zNodes;});
+		$.getJSON("./data/JavaScript.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.getJSON("./data/Tools.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.getJSON("./data/JavaScriptSpecialEffects.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.getJSON("./data/EclipseSet.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.getJSON("./data/StudySummary.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.getJSON("./data/DataBase.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.ajaxSettings.async = true;//ajax数据改成异步的
 		
+		//将组合的数据添加到树形结构中
+		var treeObj =$("#leftTree");
+		$.fn.zTree.init(treeObj, setting, treeData);
+		treeObj.hover(function () {
+			if (!treeObj.hasClass("showIcon")) {
+				treeObj.addClass("showIcon");
+			}
+		}, function() {
+			treeObj.removeClass("showIcon");
+		});
+		
+		
+		
+		//查询树形结构
 		$("#searchNodes").keydown(function(event) {    
             if (event.keyCode == 13) {    
               getTreeByName("leftTree","searchNodes");
