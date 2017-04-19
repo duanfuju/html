@@ -31,6 +31,8 @@
 		<!--ztree树插件-->
 		<script type="text/javascript" src="plugin/ztree/js/jquery.ztree.core.js" ></script>
 		<script type="text/javascript" src="plugin/ztree/js/jquery.ztree.excheck.js" ></script>
+		
+		<script type="text/javascript" src="js/audio.js" ></script>
 		<!--自己写的js，一定要放在最后-->
 		<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
 		
@@ -43,9 +45,38 @@
 		<label id='musicTop' for='sideToggle' title="控制音乐">=</label>
 		<input type='checkbox' id='sideToggle'>
 		<aside id="musicDiv">
+			 <div style="margin-bottom: 5px;">  
+                       	 正在播放: <strong id="rmusic"></strong>  
+             </div>  
 			<![if !IE]>
-				<audio src="music/Undo (Live)-Sanna Nielsen.mp3" autoplay="autoplay" controls="controls"></audio>
+				<audio  autoplay="autoplay" controls="controls" id="audio">
+				</audio>
 			<![endif]>
+			<div class="btn-group">  
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">播放模式 <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#" id="btn-loop">
+                            	单曲循环
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-order">
+                           	          顺序播放
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-random">
+                            	随机播放
+                        </a>
+                    </li>
+                </ul>
+               </div>
+                <button id="btn-pre" class="btn btn-success">上一首 </button>
+                <button id="btn-next" class="btn btn-success">下一首 </button>
+                <ol id="m-list">  
+  
+                </ol>  
 		</aside>
 			
 			
@@ -53,7 +84,6 @@
 		<div class="heading">
 			<!--svg学习的网站		http://know.webhek.com/svg/svg-rectangle-rect.html-->
 			<iframe src="svg/svg.svg" width="100%" height="100%" frameborder="0"></iframe>
-			<video loop poster="/video/features/merge.jpg"></video>
 		</div>
 		<div class="nav">
 			<!--不能加form标签，否则在触发enter键查询的时候会默认提交，刷新页面-->

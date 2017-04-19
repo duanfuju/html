@@ -1,15 +1,27 @@
+ol{
+	list-style: none;
+	background-image: url(../img/20141105110252_SaBMW.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+li{
+	cursor: pointer;
+}
+a{
+	color: white;
+}
 #musicDiv{
-	background-color:aquamarine;  
+	/*background-color:aquamarine;*/  
     position:fixed;  
-    height:25px;  
+    height:250px;  
     width:300px;  
     right:0px;  
-    bottom:0px;  
+    top:0px;  
     transition:0.2s ease-out;
     -webkit-transition:0.2s ease-out; 
 }
 #musicTop{
-	background-color:aquamarine;  
+	/*background-color:aquamarine;  */
     position:fixed;  
     height:25px;  
     width:50px;  
@@ -34,4 +46,10 @@
     text-align: center;
     text-shadow: 0 -4px;
     width: 30px;
+}
+
+#m-list{
+	width: auto;
+	height:480px;
+	overflow: auto;
 }

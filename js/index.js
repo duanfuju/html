@@ -18,6 +18,7 @@ Lolita.prototype={
 		this.initLeftDataTree();//右侧树
 		this.hiddenEvent();//浮动隐藏
 		this.btnGroup();//按钮点击事件 
+		
 	},
 	hiddenEvent:function(){
 		$(".main").hover(function(){
@@ -33,14 +34,15 @@ Lolita.prototype={
 		return array1;
 	},
 	btnGroup:function(){
-		//音乐控制
-		$("#sideToggle").on("click",function(){
-			
-		});
+		
 		//点击放大
 		$("#timg").on("click",function(){
 			window.open($(".container .main iframe").attr("src"));
 		});
+		
+		$("#sideToggle").click();//隐藏音乐播放器
+		$("#m-list li a:eq(0)").click();//自动播放第一首歌曲
+		$('#btn-order').click();//按顺序播放
 	},
 	initLeftDataTree:function(){
 		var curMenu = null, zTree_Menu = null;
