@@ -43,6 +43,10 @@ Lolita.prototype={
 		$("#sideToggle").click();//隐藏音乐播放器
 		$("#m-list li a:eq(0)").click();//自动播放第一首歌曲
 		$('#btn-order').click();//按顺序播放
+		//标题过长，浮动显示信息
+		$(".musicTitle").hover(function(){
+			$(this).attr("title",$("#rmusic").html());
+		});
 	},
 	initLeftDataTree:function(){
 		var curMenu = null, zTree_Menu = null;

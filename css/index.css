@@ -53,3 +53,9 @@ a{
 	height:480px;
 	overflow: auto;
 }
+.musicTitle{
+	margin-bottom: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
