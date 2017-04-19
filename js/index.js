@@ -16,7 +16,15 @@ Lolita.prototype={
 	},
 	render:function(){
 		this.initLeftDataTree();//右侧树
-		
+		this.hiddenEvent();//浮动隐藏
+		this.btnGroup();//按钮点击事件 
+	},
+	hiddenEvent:function(){
+		$(".main").hover(function(){
+			$("#timg").css("display","block");
+		},function(){
+			$("#timg").css("display","none");
+		});
 	},
 	jsonArrayMerge:function(array1,array2){
 		$.each(array2, function(i,data) {
@@ -25,7 +33,14 @@ Lolita.prototype={
 		return array1;
 	},
 	btnGroup:function(){
-		$("#sideToggle").click();
+		//音乐控制
+		$("#sideToggle").on("click",function(){
+			
+		});
+		//点击放大
+		$("#timg").on("click",function(){
+			window.open($(".container .main iframe").attr("src"));
+		});
 	},
 	initLeftDataTree:function(){
 		var curMenu = null, zTree_Menu = null;
@@ -64,7 +79,7 @@ Lolita.prototype={
     	}
     	//树节点的点击事件（查看节点的详情）
     	function setRightDivText(treeNode){
-			$(".main").html( treeNode.detail);
+			$(".main iframe").attr("src",treeNode.detail);
     	}
     	function addDiyDom(treeId, treeNode) {
 			var spaceWidth = 5;

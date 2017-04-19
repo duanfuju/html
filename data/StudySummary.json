@@ -4,76 +4,76 @@
 		"pId":7,
 		"name":"JavaScript基础", 
 		"title":"",
-		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JavaScript基础.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/JavaScript基础.txt"
 	},
 	{
 		"id":709,
 		"pId":7,
 		"name":"JQuery基础", 
 		"title":"",
-		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JQuery基础.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/JQuery基础.txt"
 	},
 	{
 		"id":708,
 		"pId":7,
 		"name":"JQueryUI的基础", 
 		"title":"",
-		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JQueryUI的基础.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/JQueryUI的基础.txt"
 	},
 	{
 		"id":707,
 		"pId":7,
 		"name":"JQueryMobile学习笔记", 
 		"title":"",
-		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/JQueryMobile.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/JQueryMobile.txt"
 	},
 	{
 		"id":706,
 		"pId":7,
 		"name":"HTML5学习笔记(简洁版)", 
 		"title":"",
-		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/HTML5学习笔记(简洁版).txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/HTML5学习笔记(简洁版).txt"
 	},
 	{
 		"id":705,
 		"pId":7,
 		"name":"css基础", 
 		"title":"",
-		"detail":"<iframe frameborder='0' src='https://duanfuju.github.io/helpdoc/css基础.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/css基础.txt"
 	},
 	{
 		"id":704,
 		"pId":7,
 		"name":"html基础", 
 		"title":"",
-		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/html基础.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/html基础.txt"
 	},
 	{
 		"id":703,
 		"pId":7,
 		"name":"html5新特性", 
 		"title":"",
-		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/html5新特性.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/html5新特性.txt"
 	},
 	{
 		"id":703,
 		"pId":7,
 		"name":"响应式布局", 
 		"title":"",
-		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/响应式布局.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/响应式布局.txt"
 	},
 	{
 		"id":702,
 		"pId":7,
 		"name":"git命令学习笔记", 
 		"title":"",
-		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/git命令学习笔记.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/git命令学习笔记.txt"
 	},
 	{
 		"id":701,
 		"pId":7,
 		"name":"jfinal框架总结", 
 		"title":"",
-		"detail":"<iframe frameborder='0'  src='https://duanfuju.github.io/helpdoc/jfinal框架总结.txt' width='100%' height='500px'></iframe>"
+		"detail":"https://duanfuju.github.io/helpdoc/jfinal框架总结.txt"
 	}
 ]
