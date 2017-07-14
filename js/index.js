@@ -122,6 +122,7 @@ Lolita.prototype={
 		$.getJSON("./data/EclipseSet.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
 		$.getJSON("./data/StudySummary.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
 		$.getJSON("./data/DataBase.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
+		$.getJSON("./data/Java.json", function(data){treeData=Lolita.prototype.jsonArrayMerge(treeData,data);})
 		$.ajaxSettings.async = true;//ajax数据改成异步的
 		
 		//将组合的数据添加到树形结构中
