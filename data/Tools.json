@@ -1,5 +1,19 @@
 [
 	{
+		"id":408,
+		"pId":4,
+		"name":"快速获取当前文件夹中所有的文件的文件名", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/idea引起的源文件过长无法删除.txt"
+	},
+	{
+		"id":407,
+		"pId":4,
+		"name":"cmd命令", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/cmd命令.txt"
+	},
+	{
 		"id":406,
 		"pId":4,
 		"name":"快速获取当前文件夹中所有的文件的文件名", 
