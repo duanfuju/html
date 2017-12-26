@@ -32,7 +32,7 @@
 		<script type="text/javascript" src="plugin/ztree/js/jquery.ztree.core.js" ></script>
 		<script type="text/javascript" src="plugin/ztree/js/jquery.ztree.excheck.js" ></script>
 		<!--音乐播放器-->
-		<script type="text/javascript" src="js/audio.js" ></script>
+		<!--<script type="text/javascript" src="js/audio.js" ></script>-->
 		<!--自己写的js，一定要放在最后-->
 		<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
 		
@@ -45,38 +45,7 @@
 		<label id='musicTop' for='sideToggle' title="控制音乐">=</label>
 		<input type='checkbox' id='sideToggle'>
 		<aside id="musicDiv">
-			 <div class="musicTitle">  
-                       	 正在播放: <strong id="rmusic"></strong>  
-             </div>  
-			<![if !IE]>
-				<audio  autoplay="autoplay" controls="controls" id="audio">
-				</audio>
-			<![endif]>
-			<div class="btn-group">  
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">播放模式 <span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <a href="#" id="btn-loop">
-                            	单曲循环
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="btn-order">
-                           	          顺序播放
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="btn-random">
-                            	随机播放
-                        </a>
-                    </li>
-                </ul>
-               </div>
-                <button id="btn-pre" class="btn btn-success">上一首 </button>
-                <button id="btn-next" class="btn btn-success">下一首 </button>
-                <ol id="m-list">  
-  
-                </ol>  
+			
 		</aside>
 			
 			
@@ -97,7 +66,9 @@
 			      </div>
 	        </div>
 	        <div class="main">
-	        	 <img alt="全屏" title="全屏"  src="img/timg.jpg" id="timg" style="width: 20px; height: 20px;cursor: pointer;float: right;display: none;"/>
+	        	 <div id="timg"  style="cursor: pointer;float: right;display: none;">
+	        	 	<img alt="全屏" title="全屏"  src="img/timg.jpg"style="width: 20px; height: 20px;" /><span>全屏</span>
+	        	 </div>
 	        	 <iframe frameborder="0" scrolling="no" src="firestorm.html" width="100%" height="500px"></iframe>
 	        </div>
 	        <!--<div class="right"></div>-->

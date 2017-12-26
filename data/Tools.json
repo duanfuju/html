@@ -1,5 +1,26 @@
 [
 	{
+		"id":411,
+		"pId":4,
+		"name":"黑马工具", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/黑马工具.xlsx"
+	},
+	{
+		"id":410,
+		"pId":4,
+		"name":"VBA常用技巧", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/VBA常用技巧.doc"
+	},
+	{
+		"id":409,
+		"pId":4,
+		"name":"ExcelVBA", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/ExcelVBA.txt"
+	},
+	{
 		"id":408,
 		"pId":4,
 		"name":"idea引起的源文件过长无法删除", 

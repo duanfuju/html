@@ -1,5 +1,19 @@
 [
 	{
+		"id":7012,
+		"pId":7,
+		"name":"微服务基础笔记", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/微服务基础笔记.txt"
+	},
+	{
+		"id":7011,
+		"pId":7,
+		"name":"开发建议", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/开发建议.txt"
+	},
+	{
 		"id":7010,
 		"pId":7,
 		"name":"JavaScript基础", 

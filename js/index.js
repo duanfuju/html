@@ -11,14 +11,51 @@ function Lolita(){}
 //设置对象的属性以及方法
 Lolita.prototype={
 	init:function(){
+		this.addMusicPlayer();//增加音乐播放器的html代码片段
 		//初始化方法
 		this.render();
 	},
 	render:function(){
+		
 		this.initLeftDataTree();//右侧树
 		this.hiddenEvent();//浮动隐藏
 		this.btnGroup();//按钮点击事件 
 		
+		this.dynamicLoadScript("js/audio.js");//动态加载音乐插件js
+	},
+	addMusicPlayer:function(){
+		var html=" 	<div class='musicTitle'>  "+
+                " 	      	 正在播放: <strong id='rmusic'></strong>  "+
+		        " 	    </div>  "+
+				" 		<![if !IE]>"+
+				" 			<audio  autoplay='autoplay' controls='controls' id='audio'>"+
+				" 			</audio>"+
+				" 		<![endif]>"+
+				" 		<div class='btn-group'>  "+
+		        " 	        <button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>播放模式 <span class='caret'></span></button>"+
+		        " 	        <ul class='dropdown-menu' role='menu'>"+
+		        " 	            <li>"+
+		        " 	                <a href='#' id='btn-loop'>"+
+		        " 	                    	单曲循环"+
+		        " 	                </a>"+
+		        " 	            </li>"+
+		        " 	            <li>"+
+		        " 	                <a href='#' id='btn-order'>"+
+		        " 	                   	          顺序播放"+
+		        " 	                </a>"+
+		        " 	            </li>"+
+		        " 	            <li>"+
+		        " 	                 <a href='#' id='btn-random'>"+
+		        " 	                    	随机播放"+
+		        " 	                </a>"+
+		        " 	            </li>"+
+		        " 	        </ul>"+
+		        " 	       </div>"+
+		        " 	        <button id='btn-pre' class='btn btn-success'>上一首 </button>"+
+		        " 	        <button id='btn-next' class='btn btn-success'>下一首 </button>"+
+		        " 	        <ol id='m-list'>  "+
+		        " 	        </ol>  ";
+		        $("#musicDiv").append(html);
 	},
 	hiddenEvent:function(){
 		$(".main").hover(function(){
@@ -166,8 +203,25 @@ Lolita.prototype={
 		        zTree.expandNode(node.getParentNode(),expand);
 		    });
 		}
+	},
+	dynamicLoadScript:function (url, callback){
+	    var script = document.createElement ("script")
+	    script.type = "text/javascript";
+	    if (script.readyState){
+	        script.onreadystatechange = function(){
+	            if (script.readyState == "loaded" || script.readyState == "complete"){
+	                script.onreadystatechange = null;
+	                callback();
+	            }
+	        };
+	    } else {
+	        script.onload = function(){
+	            callback();
+	        };
+	    }
+	    script.src = url;
+	    document.getElementsByTagName("head")[0].appendChild(script);
 	}
-	
 		
 };
 
