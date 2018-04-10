@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+		<script>
+			/*function add(){
+				var sendObj={purchaseid:"2017-01-19",
+					schedulestatus:"1",
+					p_starttime:"2017-01-19",
+					p_endtime:"2017-01-19",
+					directorid:"2017-01-19",
+					schedulesummary:"2017-01-19",
+					remarks:"2017-01-19"};
+					
+					var obj={"aa":"aaa"};
+			$.ajax({
+				type:"post",
+				url:"http://127.0.0.1:8888/imslean-user/purchase/add",
+				//url:"http://127.0.0.1:8964/v1/tUser/register",
+				async:true,
+				dataType: 'json',
+				 contentType: "application/json;charset=UTF-8",
+				//crossDomain: true,
+				data:JSON.stringify(sendObj)
+				//data:{param:obj}
+			});
+			}*/
+			
+		</script>
+	</head>
+	<body>
+		<!--<button onclick="add()">新增</button>-->
+		<form action="http://127.0.0.1:8964/up/fileUpServlet?filetype=device" enctype="multipart/form-data" method="post">
+			<input type="file" name="file"/>
+			<input type="submit" name="提交" />
+		</form>
+	</body>
+</html>
