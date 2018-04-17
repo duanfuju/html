@@ -1,5 +1,12 @@
 [
 	{
+		"id":103,
+		"pId":1,
+		"name":"Nginx反向代理", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/Nginx反向代理.txt"
+	},
+	{
 		"id":102,
 		"pId":1,
 		"name":"HTTPS和SSL、TLS协议", 

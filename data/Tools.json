@@ -1,5 +1,12 @@
 [
 	{
+		"id":412,
+		"pId":4,
+		"name":"linux命令", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/linux命令.txt"
+	},
+	{
 		"id":411,
 		"pId":4,
 		"name":"黑马工具", 
