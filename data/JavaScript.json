@@ -1,5 +1,12 @@
 [	
 	{
+		"id":3014,
+		"pId":3,
+		"name":"AngularJS使用", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/AngularJS使用.txt"
+	},
+	{
 		"id":3013,
 		"pId":3,
 		"name":"AngularJS的$http的跨域问题", 
