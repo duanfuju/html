@@ -1,5 +1,12 @@
 [
 	{
+		"id":104,
+		"pId":1,
+		"name":"按天生成日志文件（logback和log4j2）", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/定时切割日志.rar"
+	},
+	{
 		"id":103,
 		"pId":1,
 		"name":"Nginx反向代理", 
