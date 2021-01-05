@@ -1,19 +1,13 @@
 [
 	
 	{
-		"id":415,
+		"id":414,
 		"pId":4,
 		"name":"git常用操作", 
 		"title":"",
 		"detail":"https://duanfuju.github.io/helpdoc/tools/git常用操作.txt"
 	},
-	{
-		"id":414,
-		"pId":4,
-		"name":"redis命令", 
-		"title":"",
-		"detail":"https://duanfuju.github.io/helpdoc/tools/redis命令.txt"
-	},
+
 	{
 		"id":413,
 		"pId":4,
@@ -59,9 +53,9 @@
 	{
 		"id":407,
 		"pId":4,
-		"name":"cmd命令", 
+		"name":"dos命令", 
 		"title":"",
-		"detail":"https://duanfuju.github.io/helpdoc/tools/cmd命令.txt"
+		"detail":"https://duanfuju.github.io/helpdoc/tools/dos命令.txt"
 	},
 	{
 		"id":406,
