@@ -1,4 +1,26 @@
 [
+	
+	{
+		"id":415,
+		"pId":4,
+		"name":"git常用操作", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/git常用操作.txt"
+	},
+	{
+		"id":414,
+		"pId":4,
+		"name":"redis命令", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/redis命令.txt"
+	},
+	{
+		"id":413,
+		"pId":4,
+		"name":"redis命令", 
+		"title":"",
+		"detail":"https://duanfuju.github.io/helpdoc/tools/redis命令.txt"
+	},
 	{
 		"id":412,
 		"pId":4,

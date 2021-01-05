@@ -74,7 +74,7 @@ Lolita.prototype={
 		
 		//点击放大
 		$("#timg").on("click",function(){
-			window.open($(".container .main iframe").attr("src"));
+			window.open($(".container .main iframe").attr("src"), 'big', 'fullscreen=yes');
 		});
 		
 		$("#sideToggle").click();//隐藏音乐播放器
